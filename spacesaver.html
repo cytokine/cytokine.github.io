@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceSaver – Support</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --accent: #0071e3;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --border: #d2d2d7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --card: #1c1c1e;
+        --accent: #2997ff;
+        --text: #f5f5f7;
+        --muted: #98989d;
+        --border: #38383a;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem 4rem;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 3rem 0 2.5rem;
+    }
+    .app-icon {
+      width: 96px; height: 96px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #1a8cff, #0050c8);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 8px 24px rgba(0,113,227,0.35);
+    }
+    .app-icon svg { width: 48px; height: 48px; fill: #fff; }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.8rem;
+    }
+
+    /* FAQ */
+    .faq-item { padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-item dt {
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      font-size: 0.97rem;
+    }
+    .faq-item dd {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Contact */
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.7rem 1.4rem;
+      border-radius: 980px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.15s;
+    }
+    .contact-link:hover { opacity: 0.85; }
+    .contact-note {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-top: 2.5rem;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="hero">
+      <div class="app-icon">
+        <!-- Storage / compress icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+        </svg>
+      </div>
+      <h1>SpaceSaver</h1>
+      <p>Convert your photos &amp; videos to HEIF/HEVC and reclaim storage space on your iPhone.</p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <dl>
+        <div class="faq-item">
+          <dt>What does SpaceSaver do?</dt>
+          <dd>SpaceSaver converts photos and videos in your photo library to the space-efficient HEIF and HEVC formats, significantly reducing file sizes while preserving visual quality.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Will my original photos be deleted?</dt>
+          <dd>The app replaces the selected items with converted versions. We strongly recommend backing up your library (e.g., via iCloud or a Mac) before running a bulk conversion.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Does SpaceSaver upload my photos anywhere?</dt>
+          <dd>No. All processing happens entirely on your device. Your photos and videos never leave your iPhone.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Why does the app ask for photo library access?</dt>
+          <dd>Read and write access to your photo library is required to read the original files and save the converted versions back. The app requests only the permissions needed for conversion.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Are Live Photos supported?</dt>
+          <dd>Yes. SpaceSaver converts both the still image and the short video component of a Live Photo.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Which iOS version is required?</dt>
+          <dd>SpaceSaver requires iOS 18 or later.</dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>Contact &amp; Support</h2>
+      <p style="font-size:0.95rem; margin-bottom:1.1rem;">
+        Have a question, found a bug, or want to suggest a feature? Send us an email — we typically reply within a few business days.
+      </p>
+      <a class="contact-link" href="mailto:jkkim@me.com">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        jkkim@me.com
+      </a>
+      <p class="contact-note">Please include your iOS version and a brief description of the issue.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 SpaceSaver &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
